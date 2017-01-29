@@ -95,7 +95,9 @@ extension RepoResultsViewController: UISearchBarDelegate {
 
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         searchBar.text = ""
+        searchSettings.searchString = searchBar.text
         searchBar.resignFirstResponder()
+        doSearch()
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

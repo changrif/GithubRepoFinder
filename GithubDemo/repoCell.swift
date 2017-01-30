@@ -24,17 +24,6 @@ class repoCell: UITableViewCell {
         // Initialization code
         branchImageView.image = #imageLiteral(resourceName: "fork")
         starImageView.image = #imageLiteral(resourceName: "star")
-        nameLabel.preferredMaxLayoutWidth = nameLabel.frame.size.width
-    }
-    
-    override func layoutIfNeeded() {
-        super.layoutIfNeeded()
-        nameLabel.preferredMaxLayoutWidth = nameLabel.frame.size.width
-    }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        nameLabel.preferredMaxLayoutWidth = nameLabel.frame.size.width
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
